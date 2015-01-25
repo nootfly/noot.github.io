@@ -43,3 +43,6 @@ This blog is to record useful codes for iOS development.
     } else {
         [SVProgressHUD showErrorWithStatus:NSLocalizedString(@"socialSetting", nil)];
     }
+
+#### Resources folder in xcode
+[NSBundle mainBundle] uses the "Resources" folder in a xcode project. This folder can be created by creating a "New Group".    
