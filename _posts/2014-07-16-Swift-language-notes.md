@@ -17,6 +17,12 @@ This blog would record my study notes of Swift language. All codes are tested on
 change to
 
     for 1..<3
+
+#### Define constants using readable formats
+
+    let paddedDouble = 000123.456
+    let oneMillion = 1_000_000
+    let justOverOneMillion = 1_000_000.000_000_1    
         
 ##### Funcitons
 Functions can also take a variable number of arguments, collecting them into an array.
