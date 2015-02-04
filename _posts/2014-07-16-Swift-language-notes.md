@@ -102,6 +102,8 @@ If a parameter is changeable in a function, it must use 'var' to define. But the
 #### Array sort
     var array = [1, 5, 3, 12, 2]
     array.sort {$0 > $1}
+    let names = ["Chris", "Alex", "Ewa", "Barry", "Daniella"]
+    var reversed = sorted(names, >)
     
 #### Struct VS Class
 One of the most important differences between structures and classes is that structures are always copied when they are passed around in your code, but classes are passed by reference.
