@@ -47,7 +47,7 @@ Snapshot cannot support Xcode5.1.1. It only works for Xcode6.1 so far.
 It can generate different iOS simulators' screenshots easily. The screenshots can be defined by recording behaviours in Instruments.
 
 ####produce
-This tools couldn't work on my macbook due to version mismatch error with phantomjs.
+This tools couldn't work on my macbook due to version mismatch error with phantomjs. I submitted an issue to the author. This issue was solved quickly. It can create an app in AppDev centre and iTunes connect.
 
 ####sigh
 It can create a provision file on the Apple development portal successfully using command line.
