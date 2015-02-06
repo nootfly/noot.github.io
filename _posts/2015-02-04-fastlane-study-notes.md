@@ -9,9 +9,9 @@ tags: ios ci
 ###Fastlane study
 According to fastlane document, fastlane is a tool which can run your deployment pipelines for different environments. It can connect with other fastlane tools. Fastlane tools are listed below:
 
- 1. snapshot  - it can capture iOS simulators' screenshots automatically.
+ 1. snapshot  - it can capture iOS simulators' screen shots automatically.
 
- 2. frameit   - it can add iPhone or iPad frames to screenshots.
+ 2. frameit   - it can add iPhone or iPad frames to screen shots.
 
  3. sigh      - it can create a new provision file using command line.
 
@@ -44,7 +44,7 @@ Next I will talk about my experience when I use fastlane to deploy a new app to 
 
 ####snapshot
 Snapshot cannot support Xcode5.1.1. It only works for Xcode6.1 so far.
-It can generate different iOS simulators' screenshots easily. The screenshots can be defined by recording behaviours in Instruments.
+It can generate different iOS simulators' screen shots easily. The screen shots can be defined by recording behaviors in Instruments.
 
 ####produce
 This tools couldn't work on my macbook due to version mismatch error with phantomjs. I submitted an issue to the author. This issue was solved quickly. It can create an app in AppDev centre and iTunes connect.
