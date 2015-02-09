@@ -164,7 +164,7 @@ The rules for creating a static interface are as follows:
  - The interface must not include controls, tables, maps, or other interactive elements.
  - The interface's notificationAlertLabel outlet must be connected to a label. The label's contents are set to the notification's alert message. The text for all other labels does not change and is whatever is specified in your storyboard file.
 
- #### Configuring the Dynamic Notification Interface
+#### Configuring the Dynamic Notification Interface
  When a notification comes, WatchKit display the right scene on Apple Watch and instantiate the corresponding **WKUserNotificationInterfaceController** subclass. The payload data is delivered to the notification interface controller using either the **didReceiveRemoteNotification:withCompletion:** or **didReceiveLocalNotification:withCompletion:** method. 
 
  In **didReceiveRemoteNotification:withCompletion:** or **didReceiveLocalNotification:withCompletion:** method, when calling the completion handler block
