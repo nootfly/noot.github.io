@@ -15,7 +15,7 @@ After June 1, 2015, all apps submitted to the App Store must include 64-bit supp
 #### 1. project setting update
 We need to update project Architectures to:
       
-      $(ARCHS_STANDARD)
+    $(ARCHS_STANDARD)
 
 #### 2. Code update
 
@@ -44,6 +44,11 @@ On iOS 8, these sizes are different with iOS 7.
 
 #### 4. Popover content size and presented view controller content size issue
 This is Apple's fault. They introduced new Popover and Alert API on iOS 8, but they broke old iOS 7 API. The size of presented view controller even has different between real devices and simulators on the same iOS version.
+
+#### 5. UICollectionViewCell content size issue
+Even the size of a cell is set, but the real size is wrong when reload the collection view. The solution is to reset its frame in the cell.
+
+    self.contentView.frame = self.bounds;
 
 
 ### iPhone 6 and iPhone 6 plus support
