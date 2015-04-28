@@ -6,7 +6,7 @@ categories: ios
 tags: ios
 ---
 
-After June 1, 2015, all apps submitted to the App Store must include 64-bit support. For existing 32-bit projects, the upgrade must be done before June 1, 2015. So I did the upgrade and found something we need to pay attention to. There are some differences between iOS 7 and iOS8. Some layouts change a little bit in iOS 8 again iOS 9. The upgrade actually includes four parts: 1)64-bit support 2)iOS 8 support 3)iPhone 6 and iPhone 6 plus support 4)build server upgrade
+After June 1, 2015, all apps submitted to the App Store must include 64-bit support. For existing 32-bit projects, the upgrade must be done before June 1, 2015. So I did the upgrade and found something we need to pay attention to. There are some differences between iOS 7 and iOS8. Some layouts change a little bit in iOS 8 again iOS 9. The upgrade actually includes four parts: 1)64-bit support, 2)iOS 8 support, 3)iPhone 6 and iPhone 6 plus support, 4)build server upgrade.
 
 
 ### 64-bit upgrade
