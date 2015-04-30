@@ -30,25 +30,30 @@ Some old libraries do not support 64-bit. Some libraries latest versions support
 GHUnitIOS has a weired problem about mapping. It takes time to fix this. 
 
 
-### iOS 8 upgrade
-Basically iOS 7 project should work on iOS 8, but it does not work really well. I've found some issues with iOS 8, while those issues do not exist on iOS 7.
+### iOS 8.3 upgrade
+Basically iOS 7 project should work on iOS 8, but it does not work really well. I've found some issues with iOS 8.3, while those issues do not exist on iOS 7.
 
 #### 1. View background
 Some view default background is not clear and white, but on iOS 7, it is clear. So we need to set [UIColor clearColor]
 
 #### 2. UIButton image issue
-setImageEdgeInsets function has different behaviors on iOS 7 and iOS 8.
+setImageEdgeInsets function has different behaviors on iOS 7 and iOS 8.3.
 
 #### 3. Popover content size and presented view controller content size issue
-On iOS 8, these sizes are different with iOS 7.
+On iOS 8.3, these sizes are different with iOS 7.
 
 #### 4. Popover content size and presented view controller content size issue
-This is Apple's fault. They introduced new Popover and Alert API on iOS 8, but they broke old iOS 7 API. The size of presented view controller even has different between real devices and simulators on the same iOS version.
+This is Apple's fault. They introduced new Popover and Alert API on iOS 8.3, but they broke old iOS 7 API. The size of presented view controller even has different between real devices and simulators on the same iOS version.
 
 #### 5. UICollectionViewCell content size issue
 Even the size of a cell is set, but the real size is wrong when reload the collection view. The solution is to reset its frame in the cell.
 
     self.contentView.frame = self.bounds;
+
+#### 6. UIButton setTitleColor: forState:UIControlStateNormal issue
+This method does not work on iOS 6.3. The below method can be used.
+
+    btn.titleLabel.textColor =
 
 
 ### iPhone 6 and iPhone 6 plus support
