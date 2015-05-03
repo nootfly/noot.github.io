@@ -17,13 +17,11 @@ This app would crash if test is nil.
     [NSString stringWithFormat:@"[%@]", @"amount"] withString:test];
 
 #### 2. UILocalNotification
-If localNotif is nil, this app would crash.
+If iPhone iOS version is below 8.0, this app would crash.
 
     UILocalNotification *localNotif = [[UILocalNotification alloc] init];
     localNotif.category = @"myCategory";
-    if (localNotif == nil) {
-         return;
-    }
+    localNotif.alertTitle = @"test"
 
 #### 3. Callback is nil
 This app would crash if errorHandler is nil.
@@ -35,3 +33,5 @@ This app would crash if errorHandler is nil.
 
 #### 4. AFNetworking 1.3.1
 This version is buggy and the app would crash when the same requests are submitted in a short time.
+
+#### 5.
