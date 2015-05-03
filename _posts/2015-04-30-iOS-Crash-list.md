@@ -17,11 +17,11 @@ This app would crash if test is nil.
     [NSString stringWithFormat:@"[%@]", @"amount"] withString:test];
 
 #### 2. UILocalNotification
-If iPhone iOS version is below 8.0, this app would crash.
+If iPhone iOS version is below 8.2, this app would crash.
 
     UILocalNotification *localNotif = [[UILocalNotification alloc] init];
-    localNotif.category = @"myCategory";
-    localNotif.alertTitle = @"test"
+    localNotif.category = @"myCategory"; //available iOS8.0
+    localNotif.alertTitle = @"test"      //available iOS 8.2
 
 #### 3. Callback is nil
 This app would crash if errorHandler is nil.
