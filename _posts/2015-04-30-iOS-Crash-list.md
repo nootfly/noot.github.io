@@ -34,4 +34,7 @@ This app would crash if errorHandler is nil.
 #### 4. AFNetworking 1.3.1
 This version is buggy and the app would crash when the same requests are submitted in a short time.
 
-#### 5.
+#### 5. Index beyond bounds
+
+    NSArray *sample = [[NSArray alloc] init];
+    NSString *test = sample[1];
