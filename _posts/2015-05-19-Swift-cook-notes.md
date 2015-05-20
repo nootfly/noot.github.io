@@ -6,7 +6,7 @@ categories: ios swift
 tags: ios swift
 ---
 
-#####Get Current Date and Time 
+####Get Current Date and Time 
 
     let date = NSDate()
     let calendar = NSCalendar.currentCalendar()
