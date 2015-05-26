@@ -38,3 +38,12 @@ This version is buggy and the app would crash when the same requests are submitt
 
     NSArray *sample = [[NSArray alloc] init];
     NSString *test = sample[1];
+
+    NSString *lastProductionYearStr = "test"
+    NSString *year = [lastProductionYearStr substringToIndex:5];
+
+#### 6. object cannot be nil when adding nil to an array
+
+     UIViewController *controller = nil;
+     [self addChildViewController:controller];
+
