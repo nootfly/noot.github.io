@@ -47,3 +47,6 @@ This version is buggy and the app would crash when the same requests are submitt
      UIViewController *controller = nil;
      [self addChildViewController:controller];
 
+#### 7. Pushing the same view controller instance more than once is not supported
+If you push the same viewcontroller object to stack again when it's already in there, the app would crash
+
