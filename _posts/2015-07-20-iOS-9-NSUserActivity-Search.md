@@ -22,3 +22,20 @@ Otherwise the search result would not show. Reference: [StackOverflow](http://st
        userActivity.contentAttributeSet = attributeSet
 
 
+The below is the workable code of an iOS NSUserActivity search on iOS 9 beta 3.
+
+        let userActivity = NSUserActivity(activityType: "noot.test")
+        userActivity.title = "Friends List";
+        userActivity.keywords = Set(["fridend", "list", "noot"])
+        userActivity.userInfo = ["action": "friends list"];
+        userActivity.eligibleForSearch = true
+        userActivity.eligibleForPublicIndexing = true
+        userActivity.expirationDate = NSDate().dateByAddingTimeInterval(60*60*24)
+        let attributeSet = CSSearchableItemAttributeSet(itemContentType: "image" as String)
+        attributeSet.contentDescription = "This is an entry all about activity search"
+        attributeSet.thumbnailData = UIImagePNGRepresentation(UIImage(named: "ben")!)
+        userActivity.contentAttributeSet = attributeSet
+        self.userActivity = userActivity
+        userActivity.becomeCurrent()
+
+
