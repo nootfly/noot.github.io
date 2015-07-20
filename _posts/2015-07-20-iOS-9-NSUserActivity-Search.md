@@ -8,15 +8,15 @@ tags: ios
 
 iOS 9 introduces NSUserActivity Search. The API is very easy, but there are some tricks. The following solutions are tested on iOS 9 beta 3. .
 
-1. On iOS 9 beta 3, NSUserActivity search only works on a real device.
+- On iOS 9 beta 3, NSUserActivity search only works on a real device.
 
-2. Need to set NSUserActivity to current activity's userActivity property.
+- Need to set NSUserActivity to current activity's userActivity property.
 Otherwise the search result would not show. Reference: [StackOverflow](http://stackoverflow.com/questions/30836398/make-app-activities-and-states-searchable-by-using-nsuseractivity)
-
 {% highlight swift %}       
-       self.userActivity = userActivity
+self.userActivity = userActivity
 {% endhighlight %}
-3. If you want to show a image and description in the search result. You need to do as the following:
+
+- If you want to show a image and description in the search result. You need to do as the following:
 {% highlight swift %}
 let attributeSet = CSSearchableItemAttributeSet(itemContentType: "image" as String)
 attributeSet.contentDescription = "This is an entry all about activity search"
