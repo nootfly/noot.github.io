@@ -2,7 +2,7 @@
 layout: post
 title:  "Machine Learning and NLP study resources"
 date:   2014-07-22 09:42:36+1000
-categories: ml
+categories: ML
 tags: ML
 ---
 In this blog, some open course resources are listed. Those courses are taught by famous professors.
