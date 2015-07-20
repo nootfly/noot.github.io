@@ -10,19 +10,21 @@ We can know some coding practices of Apple when reading [ResearchKit](https://gi
 
 #### 1. Use layout debug and layout test
 
-    #if LAYOUT_DEBUG
-        self.backgroundColor = [[UIColor blueColor] colorWithAlphaComponent:0.2];
-        _titleLabel.backgroundColor = [[UIColor greenColor] colorWithAlphaComponent:0.2];
-        _valueLabel.backgroundColor = [[UIColor greenColor] colorWithAlphaComponent:0.2];
-    #endif
+{% highlight objective c lineanchors %}
+#if LAYOUT_DEBUG
+  self.backgroundColor = [[UIColor blueColor] colorWithAlphaComponent:0.2];
+  _titleLabel.backgroundColor = [[UIColor greenColor] colorWithAlphaComponent:0.2];
+  _valueLabel.backgroundColor = [[UIColor greenColor] colorWithAlphaComponent:0.2];
+#endif
 
-    #if LAYOUT_TEST
-        self.timeLeft = 60*5;
-        self.hasHeartRate = YES;
-        self.hasDistance = YES;
-        self.distanceInMeters = 100;
-        self.heartRate = @"22";
-    #endif
+#if LAYOUT_TEST
+  self.timeLeft = 60*5;
+  self.hasHeartRate = YES;
+  self.hasDistance = YES;
+  self.distanceInMeters = 100;
+  self.heartRate = @"22";
+#endif
+{% endhighlight %}    
 
 #### 2. Storyboard VS code
 in ResearchKit, all views are written by code, but in [AppCore](https://github.com/ResearchKit/AppCore), some views and view controllers are prepared in nibs or storyboards.
@@ -30,6 +32,7 @@ in ResearchKit, all views are written by code, but in [AppCore](https://github.c
 #### 3. Small classes
 They create many small classes in one file, even these classes are similar.
 
+{% highlight objective c lineanchors %}
     @interface APCTableViewDashboardProgressItem : APCTableViewDashboardItem
 
     @property (nonatomic) CGFloat progress;
@@ -55,6 +58,7 @@ They create many small classes in one file, even these classes are similar.
     @property (nonatomic) APCDashboardMessageType messageType;
     
     @end
+{% endhighlight %} 
 
 #### 4. Add Nullability annotations 
 nullable, nonnull, NS_ASSUME_NONNULL_BEGIN and NS_ASSUME_NONNULL_END are used in the framework. So it can support Swift better.
@@ -65,13 +69,13 @@ In ORKHelpers.h
     void ORKEnableAutoLayoutForViews(NSArray *views);
 
 In ORKHelpers.m
-
+{% highlight objective c lineanchors %}
     void ORKEnableAutoLayoutForViews(NSArray *views) {
     [views enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         [(UIView *)obj setTranslatesAutoresizingMaskIntoConstraints:NO];
     }];
     }
-
+{% endhighlight %} 
 #### 6. Add UIContentSizeCategoryDidChangeNotification to labels and text fields
 
     - (void)init_ORKAnswerTextField {
