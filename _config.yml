@@ -1,14 +1,14 @@
 # Site settings
 title: Noot's Programming Notes
-email: 
+email: nootfy@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   This website includes some programming tips and useful information.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://noot.github.io" # the base hostname & protocol for your site
+url: "http://nootfly.github.io" # the base hostname & protocol for your site
 twitter_username: noot
 github_username:  nootfly
 
 # Build settings
 markdown: kramdown
 permalink: pretty
-paginate: 3
+paginate: 10
