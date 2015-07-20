@@ -6,7 +6,7 @@ categories: ios
 tags: ios
 ---
 
-iOS 9 introduces NSUserActivity Search. The API is very easy, but there are some tricks. The following solutions are tested on iOS 9 beta 3. .
+iOS 9 introduces NSUserActivity Search. The API is very easy, but there are some tricks. The following solutions are tested on iOS 9 beta 3.
 
 - On iOS 9 beta 3, NSUserActivity search only works on a real device.
 
