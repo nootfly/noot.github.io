@@ -6,7 +6,7 @@ categories: watchos
 tags: watchos
 ---
 
-There are many updates in WatchKit of watchOS 2. I will talk about five new enhancements.
+There are many updates in WatchKit of watchOS 2. I will talk about five new enhancements. I found an issue about watchOS 2 beta 3. This issue is that only apps written in Objective C can run on a real Apple watch and apps written in Swift cannot run on a real device.
 
 #### Animations
 Now you can use animateWithDuration function of WKInterfaceController to animate some properties of objects.
