@@ -2,8 +2,8 @@
 layout: post
 title:  "WatchKit study notes"
 date:   2015-02-05 15:50:00+1000
-categories: ios watchkit
-tags: ios watchkit
+categories: watchos
+tags: watchos
 ---
 
 Reference:[Apple Watch Programming Guide](https://developer.apple.com/library/prerelease/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969-CH8-SW1), the images in the doc are from this guide.

@@ -2,8 +2,8 @@
 layout: post
 title:  "watchOS 2 WatchKit updates"
 date:   2015-07-21 15:00:00+1000
-categories: ios watchkit
-tags: ios watchkit
+categories: watchos
+tags: watchos
 ---
 
 There are many updates in WatchKit of watchOS 2. I will talk about five new enhancements.
