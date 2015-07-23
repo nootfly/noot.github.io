@@ -41,6 +41,8 @@ This is a mini Safari which can be embedded in your apps. This controller can sh
 
 An example of SFSafariViewController
 {% highlight c %}
+import SafariServices
+
 if let url = NSURL(string: "https://news.ycombinator.com/") {
    let vc = SFSafariViewController(URL: url, entersReaderIfAvailable: true)
    vc.delegate = self
