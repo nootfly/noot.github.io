@@ -15,7 +15,7 @@ According to [Init labs](http://blog.initlabs.com/post/100113463211/wkwebview-vs
 UIWebView and WKWebView are just views and they can be used with other views. But SFSafariViewController is a controller and basically it cannot be used with other views. Even we can put it in a container, it would look weird as it has a address bar. So normally we just present it as a new view controller.
 
 #### UIWebView and WKWebView
-UIWebView belongs to UIKit and WKWebView belongs to WebKit. There is an interface builder component for UIWebView, but there is not one for WKWebView now. UIWebView can still be used for iOS 7 and older, and its usage is simpler than WKWebView. WKWebView is just for iOS 8 and newer. For simple web pages, UIWebView is still an option. WKWebView has a similar functionality with UIWebView, but it is more powerful. In iOS 8, Apple introduced 14 classes and 3 protocols compared to one class and one protocol with UIWebView & UIWebViewDelegate.
+UIWebView belongs to UIKit and WKWebView belongs to WebKit. There is an interface builder component for UIWebView, but there is not one for WKWebView now. UIWebView can still be used for iOS 7 and older, and its usage is simpler than WKWebView. WKWebView is just for iOS 8 and newer. For simple web pages, UIWebView is still an option. WKWebView has a similar functionality with UIWebView, but it is more powerful. In iOS 8, Apple introduced 14 classes and 3 protocols compared to one class and one protocol with UIWebView & UIWebViewDelegate. Mobile Safari cookies and Auto Fill are unavailable for UIWebView and WKWebView due to security reasons.
 
 An example of WKWebView
 {% highlight c %} 
