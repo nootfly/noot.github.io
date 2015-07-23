@@ -49,5 +49,5 @@ if let url = NSURL(string: "https://news.ycombinator.com/") {
 {% endhighlight %}
 
 #### Issue with WKWebView
-Mobile Chrome still uses UIWebView [Reference](https://code.google.com/p/chromium/issues/detail?id=423444). Some think that WKWebView API is still unfinished.
+Mobile Chrome and React Native still use UIWebView [Reference](https://code.google.com/p/chromium/issues/detail?id=423444). Some think that WKWebView API is still unfinished.
 
