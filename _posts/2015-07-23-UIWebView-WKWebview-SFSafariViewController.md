@@ -20,6 +20,8 @@ UIWebView belongs to UIKit and WKWebView belongs to WebKit. There is an interfac
 
 An example of WKWebView
 {% highlight c %} 
+@import WebKit;
+
 WKWebViewConfiguration *theConfiguration = [[WKWebViewConfiguration alloc] init];
 WKWebView *webView = [[WKWebView alloc] initWithFrame:self.view.frame configuration:theConfiguration];
 webView.navigationDelegate = self;
