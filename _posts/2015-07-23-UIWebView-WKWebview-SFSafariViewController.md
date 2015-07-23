@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "UIWebView WKWebview SFSafariViewController"
+title:  "UIWebView WKWebView SFSafariViewController"
 date:   2015-07-23 10:50:00+1000
 categories: ios
 tags: ios
