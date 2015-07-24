@@ -12,3 +12,6 @@ github_username:  nootfly
 markdown: kramdown
 permalink: pretty
 paginate: 10
+disqus_shortname: nootfly
+show_sharing_icons: true
+comments: true
