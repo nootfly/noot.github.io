@@ -14,4 +14,10 @@ permalink: pretty
 paginate: 10
 disqus_shortname: nootfly
 show_sharing_icons: true
+share_facebook: true
+share_twitter: true
+share_linkedin: true
+share_digg: true
+share_reddit: true
+share_hackernews: true
 comments: true
