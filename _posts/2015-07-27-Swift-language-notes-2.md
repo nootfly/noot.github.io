@@ -39,9 +39,7 @@ var placesAndTravelTimes = [Place: [Place: Double]]()
 {% endhighlight %}
 
 #### ??
-{% highlight swift %}
-a ?? b is equivalent to a != nil ? a! : b
-{% endhighlight %}
+`a ?? b` is equivalent to `a != nil ? a! : b`
 
 #### SequenceType, GeneratorType and IndexingGenerator
 SequenceType can be iterated with a for...in loop. GeneratorType encapsulates iteration state and interface for iteration over a sequence. IndexingGenerator is a generator for an arbitrary collection. The example below is from Apple "Exploring San Francisco" demo code.
@@ -62,5 +60,20 @@ public struct PathsView: SequenceType, CustomStringConvertible {
     public var description: String {
         return "\(paths.count) paths"
     }
+}
+{% endhighlight %}
+
+#### Hashable
+`x == y` implies `x.hashValue == y.hashValue` and Hashable extends Equatable. Instances of this type can be keys of the dictionary.
+{% highlight swift %}
+extension CLLocationCoordinate2D: Hashable {
+    public var hashValue: Int {
+        return latitude.hashValue ^ longitude.hashValue
+    }
+}
+
+public func ==(lhs: CLLocationCoordinate2D, rhs: CLLocationCoordinate2D) -> Bool {
+    return lhs.latitude == rhs.latitude &&
+        lhs.longitude == rhs.longitude
 }
 {% endhighlight %}
