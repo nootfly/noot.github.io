@@ -93,4 +93,7 @@ lazy var asHTML: Void -> String = {
         return "<\(self.name) />"
     }
 }
-{% endhighlight %}    
+{% endhighlight %}
+
+#### private(set) or internal(set)
+A property is marked with a private(set) modifier to indicate that the property should be settable only from within the same source file.
