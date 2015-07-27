@@ -33,6 +33,7 @@ var placesAndTravelTimes = [Place: [Place: Double]]()
  
  // Mutating function to allow adding of Place
  public mutating func addPlace(place: Place) {
+     precondition(placesAndTravelTimes[place] == nil)
      placesAndTravelTimes[place] = [:]
  }
 {% endhighlight %}
