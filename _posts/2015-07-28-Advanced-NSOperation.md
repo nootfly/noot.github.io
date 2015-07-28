@@ -13,7 +13,7 @@ Setting `NSOperationQueue` object `maxConcurrentOperationCount = 1` can turn thi
 
 
 #### NSOperation dependency
-NSOperation dependency API is very straightforward. You can add or remove dependencies for an operation using the `addDependency:` or `removeDependency:` method. 
+NSOperation dependency API is very straightforward. You can add or remove dependencies for an operation using the `addDependency:` or `removeDependency:` method.
 {% highlight swift %}
 /*
     This operation is made of three child operations:
@@ -30,7 +30,7 @@ let finishOperation = NSBlockOperation(block: completionHandler)
 parseOperation.addDependency(downloadOperation)
 finishOperation.addDependency(parseOperation)
 {% endhighlight %}
-Operation dependency is very useful for complicated operations. Operation dependencies are guaranteed. Based on this, all business logic in apps can be put into NSOperation and these operations are connected by dependencies. Actually WWDC 2015 app was built based on NSOperation dependencies.
+Operation dependency is very useful for complicated operations. Operation dependencies are guaranteed. Based on this, all business logic in apps can be put into NSOperation and these operations are connected by dependencies. Actually WWDC 2015 app was built based on NSOperation dependencies. Each block in the graph below represents an operation.
 
 <img src="/images/nsoperation/wwdc_app_operation_dependency.png" alt="Drawing" style="width: 997px;height: 529px"/>
 
