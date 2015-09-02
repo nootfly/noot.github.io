@@ -21,8 +21,10 @@ tags: ios
 
 2. Set proxy on a Mac
    
-   After mitmproxy is installed, you can run `mitmproxy` to start the proxy sever. If you want to use this proxy server on a iOS simulator, you need to update your network setting on your mac. The proxy server is your mac IP address. Now you can see all network traffic including iOS simulators on a mitmproxy console.
+   After mitmproxy is installed, you can run `mitmproxy` to start the proxy sever. If you want to use this proxy server on a iOS simulator, you need to update your network setting on your mac. The proxy server is your mac IP address. 
    <img src="/images/mitmproxy/proxy_setting_mac.png" alt="proxy setting on mac" />
+
+   Next visit [http://mitm.it](http://mitm.it) to install a certificate, then you can see all network traffic including iOS simulators on a mitmproxy console.
 
 3. Set proxy on an iPhone
    
