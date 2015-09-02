@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Use mitmproxy for iOS app testing"
+title:  "Use mitmproxy for iOS app network testing"
 date:   2015-09-02 11:35:00+1000
 categories: ios
 tags: ios
