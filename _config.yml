@@ -8,9 +8,11 @@ url: "http://nootfly.github.io" # the base hostname & protocol for your site
 twitter_username: noot
 github_username:  nootfly
 
+
 # Build settings
 markdown: kramdown
 permalink: pretty
+gems: [jekyll-paginate]
 paginate: 10
 disqus_shortname: nootfly
 show_sharing_icons: true
@@ -21,3 +23,4 @@ share_digg: true
 share_reddit: true
 share_hackernews: true
 comments: true
+
