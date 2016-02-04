@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Fix Jekyll 3 jekyll-pagenate issue"
-date:   2016-02-04 5:28:00 +1000
+date:   2016-02-04 15:28:00 +1100
 categories: jekyll
 tags: jekyll
 ---
