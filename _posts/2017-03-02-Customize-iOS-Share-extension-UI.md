@@ -24,5 +24,5 @@ It is common to extend `SLComposeServiceViewController` to build a share extensi
 
 Reference
 
-http://catthoughts.ghost.io/extensions-in-ios8-custom-views/
-http://blog.hellocode.co/post/share-extension/  
+[http://catthoughts.ghost.io/extensions-in-ios8-custom-views/](http://catthoughts.ghost.io/extensions-in-ios8-custom-views/)
+[http://blog.hellocode.co/post/share-extension/](http://blog.hellocode.co/post/share-extension/)  
