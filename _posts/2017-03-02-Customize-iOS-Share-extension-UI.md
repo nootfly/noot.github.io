@@ -1,13 +1,10 @@
 ---
 layout: post
 title:  "Customize iOS share extension UI"
-date:   2016-03-02 09:03:00 +1100
+date:   2017-03-02 09:03:00 +1100
 categories: ios
 tags: ios
 ---
-
-# Customize iOS share extension UI
-
 
 1. Create a new UIViewController rather than extending `SLComposeServiceViewController`, and you need to add `@objc (CustomShareViewController)`
 
