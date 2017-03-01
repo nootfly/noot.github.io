@@ -6,7 +6,9 @@ categories: ios
 tags: ios
 ---
 
+
 It is common to extend `SLComposeServiceViewController` to build a share extension UI. If you prefer a different UI, you can follow the below steps.
+
 
 1. Create a new UIViewController rather than extending `SLComposeServiceViewController`, and you need to add `@objc (CustomShareViewController)`
 
