@@ -6,9 +6,6 @@ categories: ios
 tags: ios
 ---
 
-# Customize iOS share extension UI
-
-
 1. Create a new UIViewController rather than extending `SLComposeServiceViewController`, and you need to add `@objc (CustomShareViewController)`
 
    ```swift
