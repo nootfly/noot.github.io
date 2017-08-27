@@ -6,20 +6,20 @@ categories: javascript
 tags: javascript,rn
 ---
 
-React Native (RN) is a good solution for some mobile apps, but it is not a sliver bullet for all mobile apps. Some may say they share 90% code between Android and iOS, but they do not mention some limitations of their apps. I think React Native is not good fit for small and medium size companies because those companies do not have resources to overcome some caveats of React Native. The reasons are as the below.
+React Native (RN) is a good solution for some mobile apps, but it is not a sliver bullet for all mobile apps. Some may say they share 90% code between Android and iOS, but they do not mention some limitations of their apps. I think React Native is not good fit for small and medium teams because those companies do not have resources to overcome some caveats of React Native. The reasons are as the below.
 
 #### 1. React Native SDK is just a intersection of Android and iOS SDK.
 <img src="/images/ios/rn1.png" alt="Drawing" style="width: 303px;height: 205px"/>
 
-This means that React Native SDK is limited and it just caters for the common parts of both Android and iOS SDKs. Also some RN SDK APIs are just for one of platforms. Some may argue that we can write bridges in native code to do what RN cannot do. But the bridge code is not RN code.
+This means that React Native SDK is limited and it just caters for the common parts of both Android and iOS SDKs. Also some RN SDK APIs are just for one of platforms. Some may argue that we can write bridges in native code to do what RN cannot do. But the bridge code is not RN code, also too many bridge code makes apps complex and hard to maintain.
 
-#### 2. React Native SDK and documents alway fall behind the latest Android and iOS SDK.
+#### 2. React Native SDK and documents alway fall behind the popular Android and iOS SDK.
 
-This point is obvious as the latest Android and iOS are developed by Google and Apple first, then Facebook RN team will study the latest SDKs first and then add or update new RN code to catch up the latest SDKs. The documents are lagging behind too. Even for the most popular mobile OS versions, RN just cover a portion of those APIs of SDKs.
+This point is obvious as the popular Android and iOS were developed by Google and Apple first, then Facebook RN team studies the popular SDKs first and then add or update new RN code to catch up the popular SDKs. The documents are lagging behind too. RN just cover a portion of those APIs of SDKs.
 
 #### 3. React Native components are too simple for production, and it is lack of some core libraries and components.
 
-It seems that Facebook just opened source for basic components. Some key components, such as routing, are missing. You need to find third party libraries to implement some basic functions. The process is painful as you need to compare and try different libraries. When you do a real project, you will find out these components are not enough for your projects. As a result, you need to spend lots of time to looking for some libraries or write you own components. As I know, Amazon rewrote all RN components which are ready for production. Amazon has a big team to maintain their components and does not relay on third party frameworks or libraries, which means Amazon built their own RN framework. For a small team or small companies, it is difficult to write those components.
+It seems that Facebook just opened source for basic components. Some key components, such as routing, are missing. You need to find third party libraries to implement some basic functions. This process is painful as you need to compare and try different libraries. When you do a real project, you will find out these components are not enough for your projects. As a result, you need to spend lots of time on looking for some libraries or write you own components. On the contrary, native platforms already provide these components. As I know, Amazon rewrote all RN components for production. Amazon has a big team to maintain their components and does not relay on third party frameworks or libraries, which means Amazon already built their own RN framework. For a small team or small companies, it is difficult to write those components.
 
 #### 4. React Native apps' sizes are bigger than native apps, and they are not stable as native apps.
 
