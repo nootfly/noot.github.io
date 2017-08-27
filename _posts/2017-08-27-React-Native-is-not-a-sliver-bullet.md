@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "React Native is not a sliver bullet"
-date:   2017-03-02 09:03:00 +1100
+date:   2017-08-27 18:03:00 +1000
 categories: javascript
 tags: javascript,rn
 ---
