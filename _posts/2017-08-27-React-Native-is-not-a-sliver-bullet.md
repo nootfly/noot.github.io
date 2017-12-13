@@ -28,7 +28,7 @@ This makes RN apps' sizes bigger. On the other hand, your apps stability depends
 
 #### 5. React Native projects requires developers who understand not only javascript but also Android and iOS.
 
-It does not mean that you can write good RN code when you only understand Javascript and React Native. Android and iOS have total different SDKs, design patterns, and UI elements. RN just covers the common of both platforms. You need to think through details of implementation on each platform and how to handle the difference between two SDKs. It's difficult to let Javascript, Android and iOS guys work together as they can have different opinions on some technique decisions.  
+It does not mean that you can write good RN code when you only understand Javascript and React Native. Android and iOS have total different SDKs, design patterns, and UI elements. RN just covers the common of both platforms. You need to think through details of implementation on each platform and how to handle the difference between two SDKs. It's difficult to let Javascript, Android and iOS guys work together as they can have different opinions on some technique decisions.
 
 #### 6. React Native iOS depends on Apple's policy, also it is not the core business of Facebook. There is no guarantee that Facebook will support it forever.
 
