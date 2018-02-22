@@ -44,7 +44,8 @@ To open other apps, you need to do these steps.
        let ssoToken = UICKeyChainStore.string(forKey: "sso_token", service: "sharedService") 
     ```
           
-   
+ Reference:
+ [https://developer.apple.com/library/content/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/Inter-AppCommunication/Inter-AppCommunication.html#//apple_ref/doc/uid/TP40007072-CH6-SW2](https://developer.apple.com/library/content/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/Inter-AppCommunication/Inter-AppCommunication.html#//apple_ref/doc/uid/TP40007072-CH6-SW2)  
    
 
     
