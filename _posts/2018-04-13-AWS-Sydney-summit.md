@@ -24,7 +24,7 @@ This conference focus was machine learning. There are some highlight points.
 8. The AWS Serverless Application Model (AWS SAM) is a model to define serverless applications. AWS SAM is natively supported by AWS CloudFormation and defines simplified syntax for expressing serverless resources. Based on AWS SAM, SAM Local is an AWS CLI tool that provides an environment for you to develop, test, and analyze your serverless applications locally before uploading them to the Lambda runtime.
 
 
-Reference: [https://aws.amazon.com/deeplens/](https://aws.amazon.com/deeplens/)
+Reference: [https://aws.amazon.com](https://aws.amazon.com)
 
 
 
